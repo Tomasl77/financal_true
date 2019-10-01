@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.target > div {
+    display:none;
+}
+
+.target > div:target{
+    display:block;
+}
+
+#show-list {
+    width: 70%;
+    border: 2px solid blue;
+    min-height: 400px;
+    margin: auto;
+}
+
+#get{
+    border: 2px solid salmon;  
+}
+
+
+#control-list {
+    display: flex;
+    width: 70%;
+    margin:auto;
+    border: 2px solid green;
+    justify-content: space-around;
+}
+
+#control-list button {
+    width: 130px;
+}
+
+.left {
+    border:1px solid red;
+}
+
+td {
+    text-align: center!important;
+}

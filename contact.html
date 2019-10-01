@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BankApp</title>
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Financings</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="./client.html">Clients</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active" href="#get">Get</a></li>
+                <li class="tab"><a href="#create">Create</a></li>
+                <li class="tab"><a href="#update">Update</a></li>
+                <li class="tab"><a href="#delete">Delete</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+
+    <!-- class target div starts -->
+    <div class="target">
+        <!-- Create div starts -->
+        <div id="create">
+            <form id="create-contact">
+                <fieldset>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                    <label for="email">E mail</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" required>
+                    <label for="mobile">Mobile</label>
+                    <input type="text" name="mobile" id="mobile" required>
+                    <input id="add-contact" type="button" class="btn waves-effect waves-light" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        <!-- Create div ends -->
+        <!-- Get div starts -->
+        <div id="get">
+             <!-- Modal Structure -->
+             <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4 id="h4modal"></h4>
+                        <div id="pmodal">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="modal-close waves-effect waves-green btn-flat">Annuler</a>
+                    </div>
+                </div>
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>email</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+            <div id="control-list">
+                <button id="previous"> Previous </button>
+                <button type="submit" id="button-list-contact">Show list</button>
+                <button id="next"> Next </button>
+            </div>
+        </div>
+        <!-- Get div ends -->
+    </div>
+    <!-- class target div ends -->
+
+
+    <script src="./js/materialize.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/show-list.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- <script src="./js/ajouter-contact.js" type="module"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BankApp</title>
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+     <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Financings</a></li>
+        <li><a href="./contact.html">Contacts</a></li>
+        <li><a href="#">Clients</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#create">Create</a></li>
+        <li class="tab"><a class="active" href="#get">Get</a></li>
+        <li class="tab"><a href="#update">Update</a></li>
+        <li class="tab"><a href="#delete">Delete</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">JavaScript</a></li>
+  </ul>
+
+  <form id="create-client" action="" method="post">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+    <label for="legalForm">legalForm</label>
+    <input list="legalForm">
+    <datalist id="legalForm">
+        <option value="sas">SAS</option>
+        <option value="eurl">EURL</option>
+        <option value="sasu">SASU</option>
+        <option value="sa">SA</option>
+    </datalist>
+    <label for="contact">Contact</label>
+    <input type="text" name="contact" id="contact">
+    <button type="submit" id="creation-client">Create Client</button>
+  </form>
+
+
+  <script src="./js/materialize.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
